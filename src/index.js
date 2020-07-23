@@ -61,20 +61,20 @@ menu.onmouseleave = hideSubmenu;
 // Server
 
 function getCategories(data) {
-  if (data.category == "top") {
-    if (data.menuItem == "Motors") {
+  if (data.category === "top") {
+    if (data.menuItem === "Motors") {
       return ["Car", "Motorcycle", "Plane", "Trucks", "Wheels"];
     }
-    if (data.menuItem == "Fashion") {
+    if (data.menuItem === "Fashion") {
       return ["Women's tops", "Men's tops", "Jeans", "Hats"];
     }
     return ["Server apple", "Server banana", "Server pear", "Server orange"];
   }
-  if (data.category == "additional") {
-    if (data.menuItem == "Motors") {
+  if (data.category === "additional") {
+    if (data.menuItem === "Motors") {
       return ["Tires", "Windshields", "Ski racks", "Doors", "Windows"];
     }
-    if (data.menuItem == "Fashion") {
+    if (data.menuItem === "Fashion") {
       return ["On sale", "Red stuff", "Gucci", "New Arrivals"];
     }
     return ["Server square", "Server circle", "Server oval", "Server diamond"];
